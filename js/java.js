@@ -1,18 +1,15 @@
 var swiper = new Swiper(".mySwiper-courses", {
-    slidesPerView: 4,
-    spaceBetween: 25,
+    slidesPerView: 3,
+    spaceBetween: 30,
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
     },
 });
+
 let slider = document.getElementById('slider_courses');
 let Courses = [];
 Display();
@@ -50,17 +47,19 @@ function Display()
             }
             counter++;
          
-        val +=`  <div class="show-course swiper-slide" style="width:23%;">
-                 <img src="${Courses[i].Image}" style="width:100% ; margin:0px 0px ; border-top-left-radius: .75rem; border-top-right-radius: .75rem;">
-                 <div style="margin-top:10px ; margin-left:10px ;">
-                 <h4>${Courses[i].Name} Course</h4>
-                 <p><i class="fa-solid fa-clock" ></i> ${Courses[i].hours} hours ${Courses[i].min} minutes</p>
-                 <p><i class="fa-solid fa-file-invoice-dollar"></i> ${Courses[i].Price} $</p>
-                 <hr>
-                 <img src="${path}" style="width:30px; border-radius:50% ;">
-                 <h6 style="display:inline-block ;">${Courses[i].Teacher_Name}</h6>
-                 </div>
-                 </div>`;
+        val +=`  <div class="show-course swiper-slide">
+        <div class="card" style="width: 270px; height: 400px; margin-left: 40px;">
+            <img class="card-img-top" src="${Courses[i].Image}">
+            <div class="card-body">
+                <h4 class="card-title" style="font-weight: bold;">${Courses[i].Name} Course</h4>
+                <p class="card-text"><i class="fa-solid fa-clock" ></i> ${Courses[i].hours} : ${Courses[i].min}</p>
+                <p class="card-text"><i class="fa-solid fa-file-invoice-dollar"></i> ${Courses[i].Price}$</p>
+                <hr>
+                <img class="img-teacher" src="${path}" style="width: 35px; height: 35px; border-radius:50% ;">
+                <h6 class="teacher-name" style="display: inline-block;">${Courses[i].Teacher_Name}</h6>
+            </div>
+        </div>
+    </div>`;
        
         }
         else 

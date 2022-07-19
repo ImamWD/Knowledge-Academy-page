@@ -1,18 +1,16 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 25,
+    slidesPerView: 3,
+    spaceBetween: 30,
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
     },
 });
+
+
 
 let teacher_slider = document.getElementById("teacher_slider");
 let Teachers = [];
@@ -32,14 +30,14 @@ function Display1() {
 
     for(let i = 0; i < Teachers.length; i++) {
         val +=`<div class="swiper-slide" onclick="Teacher_pass(${i})">
-                    <div class="card">
-                        <img class="card-img-top" src="${Teachers[i].Photo}" alt=" This is image">
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-weight: bold;">${Teachers[i].Name}</h5>
-                            <p class="card-text">${Teachers[i].Position}</p>
-                        </div>
-                    </div>
-                </div>`;
+        <div class="card" style="width: 270px; height: 400px; margin-left: 40px;">
+            <img class="card-img-top" src="${Teachers[i].Photo}" alt=" This is image teacher.">
+            <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">${Teachers[i].Name}</h5>
+                <p class="card-text">${Teachers[i].Position}</p>
+            </div>
+        </div>
+    </div>`;
     }
     teacher_slider.innerHTML = val;
 }
