@@ -1,17 +1,24 @@
 /* public  */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nuosu SIL', serif;
+  font-family: 'PT Sans', sans-serif;
+}
+#courseDetalis {
+    height: 67vh;
+}
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .red {
-    color: red;
+    color: #000000;
 }
 
 /* start header style */
@@ -19,52 +26,43 @@ header {
     height: 60vh;
     margin-top: 60px;
 }
-
 .courseInfo {
     width: 70%;
     padding-right: 300px;
 }
-
 #courseName {
-    color: #1e4179;
+    color: #001f54;
     font-weight: bold;
     font-size: 40px;
     padding-bottom: 20px;
 }
-
 #courseDes {
     font-size: 20px;
     width: 650px;
     font-weight: 400;
 }
-
 #coursePeriod {
     font-size: 17px;
 }
-
 .teacherImg {
     padding-top: 20px;
     font-size: 22px;
 }
-
 #teacherName{
     padding-left: 7px;
 }
-
 .courseImgDiv {
     width: 30%;
 }
-
 #courseImg {
     width: 380px;
-    box-shadow: 5px 6px rgba(206, 195, 243, 0.5);
+    box-shadow: 10px 10px 15px rgb(179, 177, 177);
     height: 250px;
 }
-
 .coursePrice{
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-left: 50px;
     text-align: center;
     font-size: 22px;
 }
-
 /* end header style */

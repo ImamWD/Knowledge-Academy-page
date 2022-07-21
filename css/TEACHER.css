@@ -1,59 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nuosu SIL', serif;
+    font-family: 'PT Sans', sans-serif;
+}
 #TeacherName {
-    color: #1e4179;
+    color: #1d3557;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: 20px;
     text-align: center;
     width: auto;
 }
-.profile
-{
+.profile {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: #efefef;
     z-index: -100;
 }
-.Teacher-img
-{
+.Teacher-img {
     margin: auto;
+    height: 185px;
     display: block;
 }
-
-table
-{
+.sub-title {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-size: 1.8em;
+    color: #1d3557;
+}
+table {
     margin-left: auto;
     margin-bottom: auto;
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
 }
-footer
-{
+footer {
     margin-top: 142px  !important;
 }
-.input-data
-{
+.input-data {
     margin: auto;
     width: 80%;
-    height: 30vh;
-    background-color: #f5f4f8 !important;
+    height: 5vh;
+    background-color: #efefef !important;
     margin-bottom: 30px;
+    color: #1d3557;
 }
-body
-{
-    background-color: #f5f4f8 !important;
+.fa-diamond {
+    font-size: 10px;
+    color: #1d3557;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.back-img
-{
+.back-img {
     background-image: url("../imgs/profile-bg.jpg");
     width: 100%;
     background-position: center;
     height: 50vh;
-
+    background-color: #ffffff;
 }
-#img
-{
+#img {
     position: absolute;
     margin-top: -130px;
     z-index: 100;
@@ -61,8 +71,7 @@ body
     margin-right: auto;
     width: 100%;
 }
-.courses
-{
+.courses {
     height:10vh;
     width: 100%;
     padding-top: 10px;
@@ -70,9 +79,8 @@ body
     align-items: center;
     justify-content: space-between;
 }
-.courses:hover
-{
+.courses:hover {
     cursor: pointer;
-    background-color: #f5f4f8;
+    background-color: #dad8d8;
 }
 

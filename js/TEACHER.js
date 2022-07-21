@@ -42,23 +42,16 @@ function display() {
   val += `
         <div class="col-12 profile">
             <h2 id="TeacherName" style="margin-top : 50px"> ${Teacher[TeacherId].Name}</h2>
-            
-             <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">Courses(${count})</th>
-                    <th scope="col">Students(30)</th>
-                    <th scope="col">Reviews(10)</th>
-
-                </tr>
-            </thead>
-            </table>
+             
             <div class="input-data">
 
-                 <h4 style="text-align :center;margin-bottom:30px"><i class="fa-solid fa-at"></i> ${Teacher[TeacherId].Email} </h4>
-                 <h4 style="text-align :center;margin-bottom:30px"> <i class="fa-brands fa-buromobelexperte"></i> ${Teacher[TeacherId].Position} </h4>
-                 <h4 style="text-align :center;margin-bottom:30px"> <i class="fa-solid fa-location-dot"></i> ${Teacher[TeacherId].Address} </h4>
-
+                  <h4 style="text-align :center;margin-bottom:30px">
+                      <i class="fa-solid fa-at"></i> ${Teacher[TeacherId].Email}  
+                      <i class="fa-solid fa-diamond"></i>
+                      <i class="fa-brands fa-buromobelexperte"></i> ${Teacher[TeacherId].Position}  
+                      <i class="fa-solid fa-diamond"></i>
+                      <i class="fa-solid fa-location-dot"></i> ${Teacher[TeacherId].Address}
+                  </h4>
                  </div>
             </div>
         `;
@@ -71,5 +64,3 @@ function ShowCourse(id)
     localStorage.setItem('id',id);
     window.location.href = 'COURSE.html';
 }
-
-

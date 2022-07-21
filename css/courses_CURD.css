@@ -1,17 +1,15 @@
-@media (max-width : 1200px) 
-{
-    .Add-Delete-btn
-    {
-        font-size: 7px !important;
-    }    
-}
-
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nuosu SIL', serif;
     font-family: 'PT Sans', sans-serif;
+}
+@media (max-width : 1200px) {
+    .Add-Delete-btn
+    {
+        font-size: 7px !important;
+    }    
 }
 .table>:not(caption)>*>* {
     padding: 2.5rem .5rem;

@@ -35,8 +35,8 @@ function Display()
             <p><i class="fa-solid fa-clock" ></i> ${Courses[i].hours} hours ${Courses[i].min} minutes</p>
             <p><i class="fa-solid fa-file-invoice-dollar"></i> ${Courses[i].Price} $</p>
             <hr>
-            <img src="${path}" style="width:30px; border-radius:50% ;">
-            <h6 style="display:inline-block ;">${Courses[i].Teacher_Name}</h6>
+            <img src="${path}" style="width:40px; height:40px; border-radius:50%;">
+            <h6 style="display:inline-block;">${Courses[i].Teacher_Name}</h6>
         </div>
         </div>
         `

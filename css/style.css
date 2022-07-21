@@ -6,6 +6,7 @@ style.css
   font-family: 'Nuosu SIL', serif;
   font-family: 'PT Sans', sans-serif;
 }
+
 /*navbar*/
 .navbar {
   background-color: #f0efeb;
@@ -32,13 +33,13 @@ style.css
   color: #ffffff;
   border-radius: 5px;
 }
+
 /*header*/
 .header {
   padding: 100px 150px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
 }
 .content {
   max-width: 700px;
@@ -136,34 +137,75 @@ style.css
 }
 
 /*footer*/
-.footer {
-  padding: 20px 0;
-  background: #001f54;
-  padding-bottom: 0px;
-  height: 100px;
+footer{
+  background: rgb(44, 80, 130, 0.9);
+  height: auto;
+  width: auto;
+  padding-top: 40px;
+  margin-top: 100px;
+  color: #fff;
 }
-.social {
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  color: #ffffff;
 }
-.social a {
-  font-size: 20px;
-  display: inline-block;
-  text-align: center;
-  margin: 0 30px;
-  color: #ffffff;
+.footer-content h3{
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 3rem;
 }
-.social a:hover {
-  opacity: 1;
-  color: #d7cfcf;
-}
-.copyright {
-  margin-top: 25px;
-  text-align: center;
-  font-weight: small;
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
   font-size: 14px;
-  letter-spacing: 1px;
-  color:#ffffff;
-  font-family: "Times New Roman", Times, serif;
+  color: #cacdd2;
 }
-
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.socials a i{
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+.socials a:hover i{
+  color: #adacac;
+}
+.footer-bottom{
+  background: rgb(34, 63, 103, .7);
+  width: auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  height: 10px;
+}
+.footer-bottom p{
+  margin-left: 20px;
+  font-size: 14px;
+  word-spacing: 3px;
+}   
+@media (max-width:500px) {
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

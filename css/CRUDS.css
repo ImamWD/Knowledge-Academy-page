@@ -1,10 +1,18 @@
-.head
-{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nuosu SIL', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+.container {
+    height: 69vh;
+}
+.head {
     height: 100vh;
     align-items: center;
 }
-.Courses-CRUD
-{
+.Courses-CRUD {
     text-decoration: none;
     border-radius: 1rem;
     height: 25vh;
@@ -13,8 +21,7 @@
     justify-content: center;
     background-image: url(../imgs/img2.jpg);
 }
-.Teacher-CRUD
-{
+.Teacher-CRUD {
     text-decoration: none;
     border-radius: 1rem;
     height: 25vh;
@@ -23,8 +30,7 @@
     justify-content: center;
     background-image: url(../imgs/img3.png);
 }
-.Student-CRUD
-{
+.Student-CRUD {
     text-decoration: none;
     border-radius: 1rem;
     height: 25vh;
@@ -33,30 +39,24 @@
     justify-content: center;
     background-image: url(../imgs/img5.png);
 }
-.courses-title
-{
+.courses-title {
     color: white;
     margin-bottom: 30px;
 }
 @media (max-width :900px) {
-    .cruds-col
-    {
+    .cruds-col {
         flex-direction: column;
     }
-    .Student-CRUD  
-    {
+    .Student-CRUD {
         width: 100% !important ;
     }
-    .Teacher-CRUD
-    {
+    .Teacher-CRUD {
         width: 100% !important;
     }
-    .Courses-CRUD
-    {
+    .Courses-CRUD {
         width: 100% !important ;
     }
 }
-.card-img-top
-{
+.card-img-top {
     height: 271px;
 }
